@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/madhav-devel/express-validator-proxy.git"
+    "url": "https://github.com/madhav-devel/express-validator-proxy"
   },
   "directories": {
     "test": "test"
