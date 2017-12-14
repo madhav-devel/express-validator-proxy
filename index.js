@@ -33,7 +33,7 @@ const matchUrlWithSchema = (reqUrl) => {
 const decorateWithNullable = (schema) => {
   if (schema && schema.properties) {
     Object.keys(schema.properties).forEach((prop) => {
-      if (schema.properties[prop]['x-nullable']) {
+      if (!schema.properties[prop]['required']) {
         schema.properties[prop] = {
           oneOf: [
             schema.properties[prop],
